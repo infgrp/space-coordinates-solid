@@ -40,10 +40,10 @@
       lab(V.P, "$(a,\\,b,\\,c)$", { o: "r", p: 1, c: "g" }), ra(V.X, V.O, V.ZX, { p: 0 }), ra(V.Y, V.O, V.YZ, { p: 0 })] }; };
   // 보기: P(1, 2, 4) 와 수선의 발
   F.bogiP = () => { const b = cbox(1, 2, 4); const V = b.V;
-    return { P: {}, size: 20, I: [...axes(3, 4, 5), ...b.it, pt(V.P), lab(V.P, R("P(1,\\,2,\\,4)"), { o: "r" }),
+    return { P: {}, size: 20, I: [...axes(3, 4, 5), ...b.it, pt(V.P), lab(V.P, R("P"), { o: "a" }),
       pt(V.XY, { c: "m" }), pt(V.YZ, { c: "m" }), pt(V.ZX, { c: "m" }), lab(V.XY, R("A"), { o: "br", c: "m" }), lab(V.YZ, R("B"), { o: "r", c: "m" }), lab(V.ZX, R("C"), { o: "l", c: "m" }),
-      pt(V.X, { c: "b", p: 1 }), pt(V.Y, { c: "b", p: 1 }), pt(V.Z, { c: "b", p: 1 }), lab(V.X, R("D"), { o: "bl", c: "b", p: 1 }), lab(V.Y, R("E"), { o: "br", c: "b", p: 1 }), lab(V.Z, R("F"), { o: "l", c: "b", p: 1 }),
-      lab(V.X, "$1$", { o: "b", p: 1 }), lab(V.Y, "$2$", { o: "b", p: 1 }), lab(V.Z, "$4$", { o: "al", p: 1 })] }; };
+      pt(V.X, { c: "b", p: 1 }), pt(V.Y, { c: "b", p: 1 }), pt(V.Z, { c: "b", p: 1 }), lab(V.X, R("D"), { o: "bl", c: "b", p: 1 }), lab(V.Y, R("E"), { o: "br", c: "b", p: 1 }), lab(V.Z, R("F"), { o: "ar", c: "b", p: 1 }),
+    ] }; };
   // 문제: 두 그림
   F.prob1 = () => {
     const b1 = cbox(2, 4, 3), sh = [9, 0, 0], S = q => add(q, sh);
